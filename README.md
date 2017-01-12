@@ -1,3 +1,3 @@
-# My Awesome Book
+# Go语言基础研习笔记
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+本书仅为我Go语言基础学习的零碎笔记。
