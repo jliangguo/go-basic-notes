@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* func
+* [func](func.md)
 * [encapsulation](encapsulation.md)
 
