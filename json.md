@@ -98,3 +98,15 @@ Color bool `json:"color,omitempty"`
 
 编码的逆操作是解码，对应将JSON数据解码为Go语言的数据结构，Go语言中一般叫unmarshaling，通过`json.Unmarshal`函数完成。下面的代码将JSON格式的电影数据解码为一个结构体slice，结构体中只有Title成员。通过定义合适的Go语言数据结构，我们可以选择性地解码JSON中感兴趣的成员。当Unmarshal函数调用返回，slice将被只含有Title信息值填充，其它JSON成员将被忽略。
 
+```go
+var titles []struct{ Title string }
+if err := json.Unmarshal(data, &titles); err != nil {
+    log.Fatalf("JSON unmarshaling failed: %s", err)
+}
+fmt.Println(titles) // "[{Casablanca} {Cool Hand Luke} {Bullitt}]"
+```
+
+许多web服务都提供JSON接口，通过HTTP接口发送JSON格式请求并返回JSON格式的信息。
+
+
+
