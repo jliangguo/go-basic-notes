@@ -1,6 +1,6 @@
 # map
 
-map是键值对的映射。
+map是键值对的映射，类型可以写为`map[K]V`，其中K和V分别对应key和value。
 
 如何创建一个map呢？make可以创建空的map，比如：
 
