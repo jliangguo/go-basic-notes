@@ -14,8 +14,8 @@ type Reader interface {
 type Writer interface {
 	Write(b []byte) (n int, err error)
 }
-
-type ReadWriter interface {
+// 接口内嵌
+type ReadWriter interface { 
 	Reader
 	Writer
 }
